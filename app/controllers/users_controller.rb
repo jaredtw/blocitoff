@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
 
   before_action :require_sign_in
-  
+
   def show
-    @user = User.find(params[:id])
+    @user = current_user
   end
+  
 end
