@@ -3,7 +3,8 @@ class UsersController < ApplicationController
   before_action :require_sign_in
 
   def show
-    @user = current_user
+    @item = Item.new
+    @items = Item.where(@user == current_user)
   end
-  
+
 end
