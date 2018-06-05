@@ -1,4 +1,5 @@
 <% if @item.user == current_user || @item.user == nil %>
     <p id="<%= item.id %>"><%= item.name %>
+    <%= link_to "", item, method: :delete, class: 'glyphicon glyphicon-ok' %>
     <%= "#{distance_of_time_in_words(Time.now, item.created_at + 7.days)} before deletion" %></p>
 <% end %>
