@@ -1,24 +1,10 @@
-# README
+###Blocitoff
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  Blocitoff is a ruby on rails app where users can create a free account, login, and create to-do tasks. Uses devise gem for account registration/verification. Users have a public profile where their tasks are displayed to other users.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  * uses faker gem to seed data
+  * uses Ajax to add and delete items off the to-do list without refreshing the page
+  * displays the time from when the item was created to when it will be deleted (7-day timer).
+  * creates custom rake tasks to delete all to-do items over seven days old
+  
+  Made during my time at [Bloc](http://bloc.io)
