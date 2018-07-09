@@ -1,3 +1,4 @@
+
 ##Blocitoff
 
   Blocitoff is a ruby on rails app where users can create a free account, login, and create to-do tasks. Uses devise gem for account registration/verification. Users have a public profile where their tasks are displayed to other users.
