@@ -1,0 +1,15 @@
+<% if current_user %>
+<h3>User</h3>
+<p>Name: <%= @user.name if @user.name %></p>
+<p>Email: <%= @user.email if @user.email %></p>
+
+<h2>Your To-Do List</h2>
+    <div class="col-md-8">
+        <div class='my-items'>
+            <%= render @items %>
+        </div>
+        <div class='new-item'>
+            <%= render "items/form", item: Item.new %>
+        </div>
+    </div>
+<% end %>
