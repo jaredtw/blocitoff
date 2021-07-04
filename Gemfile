@@ -39,6 +39,8 @@ gem 'thor', '0.19.1'
 
 gem 'devise'
 
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
 group :development do
   gem 'listen', '~> 3.0.5'
   gem 'rspec-rails', '~> 3.0'
