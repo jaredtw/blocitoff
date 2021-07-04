@@ -1,0 +1,5 @@
+<%= form_for @item do |f| %>
+  <%= f.text_field :name, class: 'form-control', placeholder: "Enter new to-do item" %>
+<% end %>
+   <%= f.submit "Save", class: 'btn btn-success' %>
+<% end %>
